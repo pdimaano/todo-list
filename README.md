@@ -1,1 +1,1 @@
-# todo-list
+Create a to-do list using HTML, CSS, Javascript & Webpack.

@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="page-name">To-Do List</h1>
+    </header>
+    <main class="main">
+        <nav class="nav" id="nav">
+            <div class="default-projects-list">
+                <button class="button-default-project" id="button-inbox-projects">
+                    Inbox
+                </button>
+                <button class="button-default-project" id="button-today-projects">
+                    Today
+                </button>
+                <button class="button-default-project" id="button-week-projects">
+                    This Week
+                </button>
+            </div>
+            <h1 class="projects-title">Projects</h1>
+            <div class="projects-list" ix="projects-list"></div>
+            <button class="button-add-project" id="button-add-project">
+                + Add Project
+            </button>
+            <div class="add-project-popup" id="add-project-popup">
+                <input 
+                class="input-add-project-popup"
+                id="input-add-project-popup"
+                type="text" 
+                />
+                <div class="add-project-popup-buttons">
+                    <button 
+                    class="button-add-project-popup"
+                    id="button-add-project-popup"
+                    >
+                        Add
+                    </button>
+                    <button 
+                    class="button-cancel-project-popup"
+                    id="button-cancel-project-popup"
+                    >
+                        Cancel
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="project-preview" id="project-preview"></div>
+    </main>
 </body>
 </html>

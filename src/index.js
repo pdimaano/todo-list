@@ -1,1 +1,3 @@
-console.log('TEST')
+import UI from './UI'
+
+document.addEventListener('DOMContentLoaded', UI.loadHomepage)

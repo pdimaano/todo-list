@@ -127,7 +127,7 @@ export default class UI {
     static closeAllPopups() {
         UI.closeAddProjectPopup()
         if (document.getElementById('button-add-task')) {
-            UI.clossAddTaskPopup()
+            UI.closeAddTaskPopup()
         }
         if (
             document.getElementById('tasks-list') &&
@@ -223,7 +223,6 @@ export default class UI {
         const todayProjectsButton = document.getElementById('button-today-projects')
         const weekProjectsButton = document.getElementById('button-week-projects')
         const projectButtons = document.querySelectorAll('[data-project-button]')
-        const openNavButton = document.getElementById('button-open-nav')
 
         inboxProjectsButton.addEventListener('click', UI.openInboxTasks)
         todayProjectsButton.addEventListener('click', UI.openTodayTasks)
@@ -231,7 +230,6 @@ export default class UI {
         projectButtons.forEach((projectButton) => 
             projectButton.addEventListener('click', UI.handleProjectButton)
         )
-        openNavButton.addEventListener('click', UI.openNav)
     }
 
     static openInboxTasks() {
@@ -277,13 +275,6 @@ export default class UI {
         Storage.deleteProject(projectName)
         UI.clearProjects()
         UI.loadProjects()
-    }
-
-    static openNav() {
-        const nav = document.getElementById('nav')
-
-        UI.closeAllPopups()
-        nav.classList.toggle('active')
     }
 
     static initAddTaskButtons() {

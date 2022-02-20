@@ -34,7 +34,7 @@ export default class UI {
             .getTasks()
             .forEach((task) => UI.createTask(task.name, task.dueDate))
 
-        if (projectName !== 'Today' && projectName !== 'This week') {
+        if (projectName !== 'Today' && projectName !== 'This Week') {
             UI.initAddTaskButtons()
         }
     }
@@ -79,11 +79,11 @@ export default class UI {
         userProjects.innerHTML += `
             <button class="button-project" data-project-button>
                 <div class="left-project-panel">
-                    <i class="fas fa-tasks></>
+                    <i class="fas fa-tasks"></i>
                     <span>${name}</span>
                 </div>
                 <div class="right-project-panel">
-                    <i class="fas fa-times></i>
+                    <i class="fas fa-times"></i>
                 </div>
             </button>`
         
@@ -102,7 +102,7 @@ export default class UI {
                 <div class="right-task-panel">
                     <p class="due-date" id="due-date">${dueDate}</p>
                     <input type="date" class="input-due-date" data-input-due-date>
-                    <i class="fas fa-times></i>
+                    <i class="fas fa-times"></i>
                 </div>
             </button>`
 
@@ -122,7 +122,7 @@ export default class UI {
 
     static clearProjects() {
         const projectsList = document.getElementById('projects-list')
-        projectPreview.textContent = ''
+        projectsList.textContent = ''
     }
 
     static clearTasks() {

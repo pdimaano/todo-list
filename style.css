@@ -1,7 +1,6 @@
 :root {
-    --darker: #0044dd;
-    --lighter: #b994d1;
-    --shade: #b5c3c5;
+    --darker: #2b29a7;
+    --shade: #e3ebec;
 }
 
 *,
@@ -19,7 +18,6 @@ html {
 
 body {
     background-color: var(--lighter);
-    color: var(--darker);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.6;
     margin-bottom: 48px;
@@ -53,7 +51,7 @@ input {
     justify-content: space-between;
     padding: 20px;
     background-color: var(--darker);
-    color: var(--lighter);
+    color: #eee;
 }
 
 .page-name {
@@ -99,7 +97,6 @@ input {
 
 .button-project.active,
 .button-default-project.active {
-    background-color: #ccc;
     font-weight: bold;
 }
 
@@ -266,7 +263,7 @@ input {
 }
 
 .button-add-task:hover {
-    background-color: var(--lighter);
+    background-color: #eee;
 }
 
 .add-task-popup {

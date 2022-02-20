@@ -170,7 +170,7 @@ export default class UI {
 
         addProjectButton.addEventListener('click', UI.openAddProjectPopup)
         addProjectPopupButton.addEventListener('click', UI.addProject)
-        cancelProjectPopupButton.addEventListener('click', UI.closeaddProjectPopup)
+        cancelProjectPopupButton.addEventListener('click', UI.closeAddProjectPopup)
         addProjectPopupInput.addEventListener(
             'keypress', 
             UI.handleAddProjectPopupInput

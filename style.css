@@ -45,6 +45,10 @@ input {
     border-radius: 5px;
 }
 
+i {
+    margin-right: 10px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -68,6 +72,7 @@ input {
     min-width: 250px;
     padding: 20px;
     background-color: var(--shade);
+    box-shadow: 2px 5px 10px #0000004f;
 }
 
 .nav.active {
@@ -82,6 +87,13 @@ input {
 .projects-title {
     padding: 10px;
     margin-top: 10px;
+}
+
+.button-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .button-add-project {
@@ -160,7 +172,6 @@ input {
 .project-preview {
     width: 900px;
     padding: 20px 40px;
-    margin: 0 auto;
 }
 
 .project-preview h1 {
@@ -178,7 +189,7 @@ input {
 }
 
 .button-task:hover {
-    background-color: #d4bdbd;
+    background-color: #f8f5f5;
 }
 
 .left-task-panel {

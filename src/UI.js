@@ -79,7 +79,7 @@ export default class UI {
         userProjects.innerHTML += `
             <button class="button-project" data-project-button>
                 <div class="left-project-panel">
-                    <i class="fas fa-tasks"></i>
+                    <i class="fa-solid fa-star"></i>
                     <span>${name}</span>
                 </div>
                 <div class="right-project-panel">
